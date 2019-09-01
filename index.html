@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="boot/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="boot/css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="boot/css/style.css" rel="stylesheet">
+</head>
+<header style ="color: rgb(0, 0, 0) !important"> 
+  <div class="row justify-content-center">
+  <div class="col-md-6" style="z-index: 10;">
+    <br>
+    <h5 style="text-align: center"> <b>Jignesh Gharat</b> | Data Visualization | Guide :<b>Amit Kapoor</b> </h5>
+  </div>
+</div> 
+    <div class="view intro-2" >  
+      <div class="mask flex-center" style="opacity: 1 !important">
+        <div class="container">
+          <div class=" text-center wow fadeInUp">
+            <h1 style="font-size: 3em; font-weight: 400">Coinages of India</h1>
+            <h5>1980 - 2019</h5>
+            <br>
+            <h5>A visualization of changes in the design of coins and amount <br>of raw material used to mint coins of India
+            </h5>
+          </div>
+        </div>   
+  </div>
+  </div>
+
+</header>
+<!--Main Navigation-->
+
+<!--Main Layout-->
+<main class="text-center py-5 mt-3 b1" style="padding-top: 0em !important ;">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+          <h2 style="text-align: initial;    font-weight: 400;">
+            Abstract
+          </h2>
+        <p align="justify">Currency, coin and paper money, are strong representation of the culture and development of the nation. Hence the design of the coin and material it is made from keeps constantly changing. 
+          Chronologically, the main considerations influencing the coinage size and shape over time have been:
+          <li style="text-align: initial;">Coinage Reforms with the introduction of the metric system</li>
+          <li style="text-align: initial;">The need felt from time to time to obviate the possibility of the metallic value of coins rising beyond the face value. The cost-benefit of coinisation of currency notes</li>
+  
+        </p>
+        <br>
+        <h2 style="text-align: initial;    font-weight: 400;">
+          What did I do?
+        </h2>
+        
+        <h5 style="text-align: initial;    font-weight: 400;">
+            Data gathering
+          </h5>
+      <p align="justify">I started with collecting data on the size and major design changes happened 
+        on coins during the last few decades. Followed by collecting data on the increase in prices 
+        of metal used to make the following coins. 
+      </p>
+      <br>
+      <h5 style="text-align: initial;    font-weight: 400;">
+          Data processing and Analysis
+        </h5>
+    <p align="justify">Using gathered data, I calculate the amount of metal used to mint coins 
+      of each denomination. Data of changes in the shape and size of the coin were mapped on prices of metal 
+      used to make those coins
+    </p>
+
+    <p align="justify">
+        Looking at data I realized that our coins are getting lighter and smaller. 
+        I tried finding the reason behind this by comparing the face value of our 
+        coin with its metallic value. The visualization I made was focused on covering this observation. 
+      </p>
+      <h2 style="text-align: initial;    font-weight: 400;">
+          Visualization
+        </h2>
+      </div>
+    </div>
+  </div>
+  
+  <center> <h5><b> 1 Rupee Coin | Size, Shape and Design</b></h5></center><br>
+
+  
+</main>
+<body style="background-color: rgb(225);color: rgb(0, 0, 0)">
+  <br><br><br>
+    <center> <h5><b> Visualization of changes in coin due to increase in metallic value</b></h5></center><br>
+    <div class="container">
+        <img src="Jigneshgharat_money.png" width="100%">
+       </div>
+
+   
+    <script type="text/javascript" src="boot/js/jquery-3.4.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="boot/js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="boot/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="boot/js/mdb.min.js"></script>
+    <script>
+      $().button('toggle')
+    $(document).ready(function () {
+
+$('#cf7_controls span').click(function () {
+
+$('#cf7 img').removeClass('opaque');
+
+var newImage = $(this).index();
+
+$('#cf7 img').eq(newImage).addClass('opaque');
+
+$('#cf7_controls span').removeClass('selected');
+
+$(this).addClass('selected');
+
+});
+
+});
+  </script>
+    </body>
+</html>
